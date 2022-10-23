@@ -5,5 +5,9 @@ tasks.withType(JavaCompile).each {
 }
 
 test {
-    jvmArgs(['--enable-preview'])
+    jvmArgs([
+            '--enable-preview',
+            '--enable-native-access=ALL-UNNAMED',
+            "-Djava.library.path=${rootDir}/panama-tutorial-001/lib/.libs"
+    ])
 }
