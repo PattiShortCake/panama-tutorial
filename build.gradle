@@ -1,0 +1,21 @@
+plugins {
+    alias(libs.plugins.eclipse.apt)
+    alias(libs.plugins.lombok)
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+subprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'java-test-fixtures'
+    apply plugin: 'com.diffplug.eclipse.apt'
+    apply plugin: 'io.freefair.lombok'
+
+    sourceCompatibility = JavaVersion.VERSION_19
+
+    dependencies {
+        implementation platform(libs.spring.boot.dependencies)
+        annotationProcessor platform(libs.spring.boot.dependencies)
+    }
+}

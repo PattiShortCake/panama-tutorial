@@ -28,3 +28,15 @@
 * http://cr.openjdk.java.net/~mcimadamore/panama/panama-binder-v3.html
 * https://github.com/openjdk/panama-foreign/blob/foreign-jextract/doc/panama_jextract.md
 * https://www.nirsoft.net/utils/dll_export_viewer.html
+
+#### Build C code
+```
+cd lib
+rm -Rv .deps/ autom4te.cache/ build-aux/ m4/ target/ aclocal.m4 config.log config.status configure libtool Makefile Makefile.in; aclocal && autoconf && libtoolize && automake --add-missing
+# rm -Rv .deps/ autom4te.cache/ build-aux/ m4/ target/ aclocal.m4 config.log configure Makefile Makefile.in; mkdir -v build-aux && aclocal && autoconf && libtoolize && automake --add-missing  
+```
+
+```
+./configure && make
+jextract --source --output target/jextract/classes --target-package com.github.tornaia.panama.tutorial001.c -I . -l libhelloworld ./helloworld.h
+```

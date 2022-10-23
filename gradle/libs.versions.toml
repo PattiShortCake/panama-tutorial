@@ -1,0 +1,12 @@
+[versions]
+spring-boot = "2.7.3"
+
+[libraries]
+spring-boot-dependencies = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
+
+[bundles]
+
+[plugins]
+eclipse-apt = { id = "com.diffplug.eclipse.apt", version = "3.36.2" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+lombok = { id = "io.freefair.lombok", version = "6.4.3" }

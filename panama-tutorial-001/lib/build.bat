@@ -1,5 +1,6 @@
-SET PATH=c:\Program Files\Java\jdk-16\bin\;%PATH%
-SET JAVA_HOME=c:\Program Files\Java\jdk-16\
+SET JAVA_HOME=%userprofile%\.jdks\openjdk-19.0.1\
+SET JEXTRACT_HOME=%userprofile%\.jdks\jextract-19\
+SET PATH=%JAVA_HOME%\bin\;%JEXTRACT_HOME%/bin;PATH%
 
 rd /s /q target
 

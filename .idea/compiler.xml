@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="panama-tutorial-005" />
+        <module name="panama-tutorial-004" />
+        <module name="panama-tutorial-003" />
+        <module name="panama-tutorial-002" />
+        <module name="panama-tutorial-001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="panama-tutorial-parent" target="16" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="panama-tutorial-001" options="-Xlint:all,-options,-path --enable-preview" />
+      <module name="panama-tutorial-002" options="-Xlint:all,-options,-path --enable-preview" />
+      <module name="panama-tutorial-003" options="-Xlint:all,-options,-path --enable-preview" />
+      <module name="panama-tutorial-004" options="-Xlint:all,-options,-path --enable-preview" />
+      <module name="panama-tutorial-005" options="-Xlint:all,-options,-path --enable-preview" />
+    </option>
+  </component>
+</project>
