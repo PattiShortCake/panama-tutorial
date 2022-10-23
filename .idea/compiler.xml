@@ -2,28 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+      <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
-        <module name="panama-tutorial-005" />
-        <module name="panama-tutorial-004" />
-        <module name="panama-tutorial-003" />
-        <module name="panama-tutorial-002" />
-        <module name="panama-tutorial-001" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar" />
+        </processorPath>
+        <module name="example.panama-tutorial-001.testFixtures" />
+        <module name="example.panama-tutorial-001.test" />
+        <module name="example.panama-tutorial-001.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="panama-tutorial-parent" target="16" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="19" />
   </component>
   <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="panama-tutorial-001" options="-Xlint:all,-options,-path --enable-preview" />
-      <module name="panama-tutorial-002" options="-Xlint:all,-options,-path --enable-preview" />
-      <module name="panama-tutorial-003" options="-Xlint:all,-options,-path --enable-preview" />
-      <module name="panama-tutorial-004" options="-Xlint:all,-options,-path --enable-preview" />
-      <module name="panama-tutorial-005" options="-Xlint:all,-options,-path --enable-preview" />
-    </option>
+    <option name="ADDITIONAL_OPTIONS_STRING" value="--enable-preview" />
   </component>
 </project>

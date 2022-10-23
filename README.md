@@ -38,5 +38,5 @@ rm -Rv .deps/ autom4te.cache/ build-aux/ m4/ target/ aclocal.m4 config.log confi
 
 ```
 ./configure && make
-jextract --source --output target/jextract/classes --target-package com.github.tornaia.panama.tutorial001.c -I . -l libhelloworld ./helloworld.h
+jextract --source --output ../build/jextract/classes --target-package com.github.pattyshortcake.panama.tutorial001.c -I . -l helloworld ./helloworld.h
 ```

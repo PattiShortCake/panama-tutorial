@@ -1,0 +1,9 @@
+sourceSets.main.java.srcDirs = ['build/jextract/classes/com/github/pattyshortcake/panama/tutorial001/c','src/main/java']
+
+tasks.withType(JavaCompile).each {
+    it.options.compilerArgs.add('--enable-preview')
+}
+
+test {
+    jvmArgs(['--enable-preview'])
+}

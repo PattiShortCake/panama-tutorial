@@ -1,6 +1,6 @@
 package com.github.tornaia.panama.tutorial001;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class Tutorial001Test {
 
